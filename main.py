@@ -38,7 +38,7 @@ def about():
 def my_team():
 	return team
 
-@aap.get('/team/{name}')
+@app.get('/team/{name}')
 def team_detail(name):
 	name = name.lower()
 
