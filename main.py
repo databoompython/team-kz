@@ -40,7 +40,7 @@ def my_team():
 
 @app.get('/team/{name}')
 def team_detail(name):
-	name = name.lower()
+	name = name.capitalize()
 
 	if name in team:
 		return team[name]
